@@ -8,25 +8,36 @@ terminal.countdown("Starting in...", 1000)
 
 terminal.introduction("Power Terminal", "0.0.7")
 
+sleep(0.3)
+
+
 terminal.debug("It's ALIVE!!!!!!!!!")
+
+sleep(0.3)
 
 terminal.ask("Or is it?")
 
+sleep(0.3)
+
+
 terminal.statement("It IS alive!")
+
+sleep(0.3)
 
 terminal.error("It's dead :(")
 
-sleep(3)
+sleep(1)
 
 
 for i in range(0, 100):
     terminal.clear()
-    terminal.progress(i + 1, 100, string="Progress: ", fill="█", empty=" ")
+    terminal.progress(
+        i + 1, 100, string="No, it just needs a second.", fill="█", empty=" ")
     sleep(0.01)
 
-liked = terminal.confirm("Do you like this?", "You must answer y or n")
+alive = terminal.confirm("Is it alive?", "You must answer y or n")
 
-if liked:
-    terminal.statement("You like it!")
+if alive:
+    terminal.statement("IT'S ALIIIIIVEEEEEE!!!!!!!!!!!!!!")
 else:
-    terminal.error("You don't like it :(")
+    terminal.error("It's dead =|")
