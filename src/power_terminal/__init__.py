@@ -84,9 +84,3 @@ def confirm(string, error_string):
             return False
         else:
             print(f"{bcolors.FAIL}{error_string}{bcolors.ENDC}")
-
-
-for i in range(0, 100):
-    clear()
-    progress(i + 1, 100, string="Progress: ", fill="█", empty="█")
-    sleep(0.01)
