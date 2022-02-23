@@ -58,6 +58,14 @@ _fill_: The character the will fill up the progress bar. By default, it's the "â
 
 _empty_: The character that will represent the "empty space" yet to be filled in the progress bar. By default, it's an empty string with a space. (" ")
 
+### terminal.countdown(string, millisecons)
+
+Counts down in milliseconds.
+
+### terminal.confirm(string, error_string)
+
+Asks the user to confirm or deny an action (Y/n).
+
 ## Credits
 
 Created by Matheus Goulart.

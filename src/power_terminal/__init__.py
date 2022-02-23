@@ -1,5 +1,6 @@
 import os
 import sys
+from time import sleep
 
 
 class bcolors:
@@ -61,3 +62,22 @@ def progress(done, total, length=20, string="", fill="█", empty=" "):
     print(f"|\r{hashes}{spaces}| {percent}%", end="")
 
     print(f"{bcolors.OKBLUE}{string}{bcolors.ENDC}")
+
+def countdown(string, milliseconds):
+    for i in range(milliseconds):
+        clear()
+        statement(string)
+        statement(f"{(milliseconds - i)/1000}s")
+        sleep(0.001)
+    clear()
+    return
+
+def confirm(string, error_string):
+    while True:
+        choice = input(f"{bcolors.OKGREEN}[{string}(Y/n)]{bcolors.ENDC} ")
+        if choice.lower() == "y":
+            return True
+        elif choice.lower() == "n":
+            return False
+        else:
+            print(f"{bcolors.FAIL}{error_string}{bcolors.ENDC}")
