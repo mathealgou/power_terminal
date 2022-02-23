@@ -8,21 +8,21 @@ terminal.countdown("Starting in...", 1000)
 
 terminal.introduction("Power Terminal", "0.0.7")
 
-sleep(0.3)
+sleep(1)
 
 
 terminal.debug("It's ALIVE!!!!!!!!!")
 
-sleep(0.3)
+sleep(1)
 
 terminal.ask("Or is it?")
 
-sleep(0.3)
+sleep(1)
 
 
 terminal.statement("It IS alive!")
 
-sleep(0.3)
+sleep(1)
 
 terminal.error("It's dead :(")
 
