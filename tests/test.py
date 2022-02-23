@@ -6,7 +6,7 @@ terminal.clear()
 
 terminal.countdown("Starting in...", 1000)
 
-terminal.introduction("Power Terminal", "0.0.7")
+terminal.introduction("Power Terminal", "0.0.8")
 
 sleep(1)
 
