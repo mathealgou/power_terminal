@@ -59,9 +59,10 @@ def progress(done, total, length=20, string="", fill="█", empty=" "):
 
     # Print the progress bar
 
-    print(f"|\r{hashes}{spaces}| {percent}%", end="")
+    print(f"|\r{hashes}{spaces}| {percent}%", end="\n")
 
     print(f"{bcolors.OKBLUE}{string}{bcolors.ENDC}")
+
 
 def countdown(string, milliseconds):
     for i in range(milliseconds):
@@ -71,6 +72,7 @@ def countdown(string, milliseconds):
         sleep(0.001)
     clear()
     return
+
 
 def confirm(string, error_string):
     while True:
