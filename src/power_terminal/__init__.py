@@ -59,7 +59,8 @@ def progress(done, total, length=20, string="", fill="█", empty=" "):
 
     # Print the progress bar
 
-    print(f"|\r{hashes}{spaces}| {percent}%", end="\n")
+    print(
+        f"|\r{bcolors.OKGREEN}{hashes}{bcolors.ENDC}{spaces}| {percent}%", end="\n")
 
     print(f"{bcolors.OKBLUE}{string}{bcolors.ENDC}")
 
@@ -83,3 +84,9 @@ def confirm(string, error_string):
             return False
         else:
             print(f"{bcolors.FAIL}{error_string}{bcolors.ENDC}")
+
+
+for i in range(0, 100):
+    clear()
+    progress(i + 1, 100, string="Progress: ", fill="█", empty="█")
+    sleep(0.01)
