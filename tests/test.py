@@ -4,7 +4,9 @@ import power_terminal as terminal
 
 terminal.clear()
 
-terminal.introduction("Power Terminal", "0.0.5")
+terminal.countdown("Starting in...", 1000)
+
+terminal.introduction("Power Terminal", "0.0.6")
 
 terminal.debug("It's ALIVE!!!!!!!!!")
 
@@ -21,3 +23,10 @@ for i in range(0, 100):
     terminal.clear()
     terminal.progress(i + 1, 100, string="Progress: ", fill="█", empty=" ")
     sleep(0.01)
+
+liked = terminal.confirm("Do you like this?", "You must answer y or n")
+
+if liked:
+    terminal.statement("You like it!")
+else:
+    terminal.error("You don't like it :(")
