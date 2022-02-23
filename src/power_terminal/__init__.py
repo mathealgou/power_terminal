@@ -85,6 +85,3 @@ def confirm(string, error_string):
             return False
         else:
             print(f"{bcolors.FAIL}{error_string}{bcolors.ENDC}")
-
-
-countdown("Starting in...", 2000)
