@@ -69,7 +69,8 @@ def countdown(string, milliseconds):
     for i in range(milliseconds):
         clear()
         statement(string)
-        statement(f"{(milliseconds - i)/1000}s")
+        print(
+            f"{bcolors.OKGREEN}{(milliseconds - i)/1000}{bcolors.ENDC}")
         sleep(0.001)
     clear()
     return
@@ -84,3 +85,6 @@ def confirm(string, error_string):
             return False
         else:
             print(f"{bcolors.FAIL}{error_string}{bcolors.ENDC}")
+
+
+countdown("Starting in...", 2000)
