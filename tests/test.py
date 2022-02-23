@@ -6,7 +6,7 @@ terminal.clear()
 
 terminal.countdown("Starting in...", 1000)
 
-terminal.introduction("Power Terminal", "0.0.6")
+terminal.introduction("Power Terminal", "0.0.7")
 
 terminal.debug("It's ALIVE!!!!!!!!!")
 
