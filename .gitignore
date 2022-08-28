@@ -1,2 +1,4 @@
 /dist
 /src/powerterminal.egg-info
+*/__pycache__
+*__.pyc
